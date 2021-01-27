@@ -1,5 +1,6 @@
 # Terraform_AKS
 TF AKS module for total private AKS cluster AAD Enabled including SP creation with optional regular/spot node pools
+
 tested on TF 0.12+ versions inclding 0.12 syntax
 
 # Usage example

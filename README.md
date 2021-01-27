@@ -2,6 +2,12 @@
 TF AKS module for private AKS cluster AAD Enabled including SP creation
 # Usage example
 
+    # Set to true to assign custom role definition for sp to use
+    variable "internal_set_sp_least_privilidge_role" {
+      default     = true
+      description = "This feature creates a limited role for use by the K8s Service principal which limits access to only those resources needed for k8s operation"
+    }
+
     module "service_principal" {
       source = "./service_principal"
       # Variables
